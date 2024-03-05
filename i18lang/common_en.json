@@ -1,44 +1,54 @@
 {
+  "title": "Travelling",
   "welcome": {
     "title": {
-      "company": "Bienvenido a {{company}}",
-      "user": "Bienvenido {{user}}"
+      "company": "Welcome to{{company}}",
+      "user": "Welcome {{user}}"
     }
   },
-  "about": "Sobre Nosotros",
+  "about": "About us",
   "contact": {
-    "us": "Contacto",
-    "address": "Dirección",
+    "us": "Contact",
+    "address": "Address",
     "email": "Email",
-    "tel": "Teléfono"
+    "tel": "Phone"
   },
   "change": {
-    "language": "Cambiar Lenguaje"
+    "language": "Switch Language"
   },
   "login": {
-    "tag": "Ingresar",
-    "username": "Usuario",
-    "password": "Contraseña"
+    "tag": "Login",
+    "username": "Username",
+    "password": "Password"
   },
-  "signin": "Registrar",
-  "logout": "Cerrar sesion",
+  "signin": "Register",
+  "logout": "Logout",
   "base": {
-    "settings": "Preferencias",
+    "settings": "Preferences",
     "lightMode": "Light Mode",
     "darkMode": "Dark Mode"
   },
-  "select": "Seleccionar",
-  "usernameInput": "Usuario",
-  "nameInput":"Nombre",
-  "surnameInput": "Apellido",
+  "select": "Select",
+  "usernameInput": "Username",
+  "nameInput":"Name",
+  "surnameInput": "Surname",
   "emailInput":"Email",
-  "countrySelector": "Pais",
-  "isDriver": "Conductor?",
-  "from":"Desde",
-  "to": "Hasta",
-  "driver": "Conductor",
-  "myTrips": "Mis viajes",
-  "messages": "Mensajes",
-  "profile": "Perfil",
-  "settings": "Configuración"
+  "countrySelector": "Country",
+  "isDriver": "Driver?",
+  "from":"From",
+  "to": "To",
+  "driver": "Driver",
+  "myTrips": "My Trips",
+  "messages": "Messages",
+  "profile": "Profile",
+  "settings": "Settings",
+  "country": "Country",
+  "provincestate": "Province",
+  "citySelector": "City",
+  "departureDate": "Departure",
+  "returnDate": "Return",
+  "passengers": "Passengers",
+  "submit": {
+    "trip": "Create"
+  }
 }
