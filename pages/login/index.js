@@ -18,8 +18,8 @@ export default function Login() {
         await fetch(`http://localhost:8080/api/auth/login`, {
             method: 'POST',
             body: JSON.stringify({
-                "username": username,
-                "password": password
+                username: username,
+                password: password
             })
         }).then(value => {
             // const jsessionid = value.headers.get("Set-Cookie")
