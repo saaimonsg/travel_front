@@ -3,7 +3,12 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 
 ## Getting Started
 
-First, run the development server:
+First, run the npm installation:
+
+```bash
+npm install
+```
+then run the development server:
 
 ```bash
 npm run dev
@@ -11,16 +16,16 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:80](http://localhost:80) with your browser to see the result.
 
 You can start editing the page by modifying `pages/GBAMain.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed
-on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited
-in `pages/api/hello.js`.
+[//]: # ([API routes]&#40;https://nextjs.org/docs/api-routes/introduction&#41; can be accessed)
+[//]: # (on [http://localhost:3000/api/hello]&#40;http://localhost:3000/api/hello&#41;. This endpoint can be edited)
+[//]: # (in `pages/api/hello.js`.)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated
-as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[//]: # (The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated)
+[//]: # (as [API routes]&#40;https://nextjs.org/docs/api-routes/introduction&#41; instead of React pages.)
 
 ## Learn More
 
@@ -40,5 +45,5 @@ from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
+## Jira board for this project
 [Jira board](https://rockstonebb.atlassian.net/jira/software/projects/TRAV/boards/1****)
