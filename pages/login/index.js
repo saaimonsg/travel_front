@@ -4,37 +4,36 @@ import TopNavbar from "../../components/nav/TopNavbar";
 import Footer from "../../components/core/footer";
 import {useTranslation} from "react-i18next";
 import axios from "axios";
+import {HttpResourceFactoryContext} from "../../components/core/context";
 
 export default function Login() {
 
     const [t, i18n] = useTranslation("common");
+    const http = useContext(HttpResourceFactoryContext);
+
     const router = useRouter()
-    const [username, setUsername] = useState("string")
-    const [password, setPassword] = useState("string")
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
 
-    const handleSubmitForm = async (event) => {
+    async function handleSubmitForm(event) {
         event.preventDefault();
-        // await fetch( `http://localhost:8080/login?username=${username}&password=${password}`, {
-        await fetch(`http://localhost:8080/api/auth/login`, {
-            method: 'POST',
-            body: JSON.stringify({
-                username: username,
-                password: password
-            })
-        }).then(value => {
-            // const jsessionid = value.headers.get("Set-Cookie")
-            // console.log(jsessionid)
-            fetch(`http://localhost:8080/app/country`, {
-                method: 'POST',
-                mode: "cors"
-            });
-            // router.push("/dashboard")
-        });
+        try {
+            const request = await http.authenticate(username, password).then(value1 => {
 
+                if (value1 != {}) {
+                    router.push("/dashboard")
+                } else {
+                    router.push("/login")
+                }
+
+            });
+        } catch (e) {
+            console.error(e) //FIXME TRAV-1
+            router.push("/login")
+        }
     }
 
     return (<>
-        {/*<TopNavbar></TopNavbar>*/}
         <form id='loginform' className="container" onSubmit={handleSubmitForm}>
             <div className="mb-3">
                 <label htmlFor="usernameInput" className="form-label">{t("usernameInput")}</label>

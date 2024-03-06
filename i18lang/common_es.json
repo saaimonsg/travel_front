@@ -30,12 +30,12 @@
   },
   "select": "Seleccionar",
   "usernameInput": "Usuario",
-  "nameInput":"Nombre",
+  "nameInput": "Nombre",
   "surnameInput": "Apellido",
-  "emailInput":"Email",
+  "emailInput": "Email",
   "countrySelector": "Pais",
   "isDriver": "Conductor?",
-  "from":"Desde",
+  "from": "Desde",
   "to": "Hasta",
   "driver": "Conductor",
   "myTrips": "Mis viajes",
@@ -50,5 +50,20 @@
   "passengers": "Pasajeros",
   "submit": {
     "trip": "Crear"
-  }
+  },
+  "user": "Usuario",
+  "trips": "Viajes",
+  "location": "Ubicaciones",
+  "user": {
+    "username": "Usuario",
+    "name": "Nombre",
+    "surname": "Apellido",
+    "email": "Email",
+    "country": "País",
+    "provincestate": "Provincia",
+    "city": "Ciudad",
+    "isDriver": "Conductor"
+  },
+  "error.user.already.exists": "El usuario ya existe",
+  "error.user.not.found": "Usuario no encontrado"
 }

@@ -50,5 +50,20 @@
   "passengers": "Passengers",
   "submit": {
     "trip": "Create"
+  },
+  "user": "User",
+  "trip": "Trip",
+  "location": "Ubicaciones",
+  "user": {
+    "userManagement": "User Management",
+    "username": "Username",
+    "name": "Name",
+    "password": "Password",
+    "surname": "Surname",
+    "email": "Email",
+    "country": "Country",
+    "provincestate": "Province/State",
+    "city": "City",
+    "isDriver": "Driver?"
   }
 }

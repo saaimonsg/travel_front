@@ -1,9 +1,7 @@
 /**
  * Style
  */
-import "../public/styles/style.css";
 
-//https://ionic.io/ionicons/usage
 /**
  * App
  */
@@ -15,6 +13,9 @@ import i18next from "i18next";
 import {I18nextProvider} from "react-i18next";
 import common_en from "../i18lang/common_en.json";
 import common_es from "../i18lang/common_es.json";
+import Footer from "../components/core/footer";
+import CustomHead from "../components/core/head/CustomHead";
+import {Html} from "next/document";
 
 
 function MyApp({Component, pageProps}) {
@@ -36,6 +37,7 @@ function MyApp({Component, pageProps}) {
         <SSRProvider>
             <InitDataContext.Provider value={data}>
                 <I18nextProvider i18n={i18next}>
+                    <CustomHead></CustomHead>
                     <Component {...pageProps}/>
                 </I18nextProvider>
             </InitDataContext.Provider>
