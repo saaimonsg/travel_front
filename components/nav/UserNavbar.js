@@ -6,6 +6,7 @@ export default function UserNavbar({children}){
 
     return <TopNavbar>
         {children}
+        <li><a type="button" className="nav-link" href="/dashboard/admin" >{t("admin")}</a></li>
         <li><a type="button" className="nav-link" href="/dashboard/trips" >{t("myTrips")}</a></li>
         <li><a type="button" className="nav-link" href="/dashboard/profile" >{t("messages")}</a></li>
         <li><a type="button" className="nav-link" href="/dashboard/profile" >{t("profile")}</a></li>

@@ -8,7 +8,6 @@ export default function Index() {
 
     return (<>
         <TopNavbar>
-            <li><a className="nav-link  " aria-current="page" href="/admin">{t("admin")}</a></li>
             <li><a className="nav-link  " aria-current="page" href="/login">{t("login.tag")}</a></li>
             <li><a className="nav-link " aria-current="page" href="/signin">{t("signin")}</a></li>
         </TopNavbar>

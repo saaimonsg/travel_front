@@ -1,8 +1,8 @@
-import AdminNavbar from "../../../../components/nav/AdminNavbar";
-import Footer from "../../../../components/core/footer";
+import AdminNavbar from "../../../../../components/nav/AdminNavbar";
+import Footer from "../../../../../components/core/footer";
 import {useTranslation} from "react-i18next";
 import {useContext, useEffect, useState} from "react";
-import {HttpResourceFactoryContext} from "../../../../components/core/context";
+import {HttpResourceFactoryContext} from "../../../../../components/core/context";
 import {useRouter} from "next/navigation";
 
 export default function Create() {
@@ -16,7 +16,7 @@ export default function Create() {
         event.preventDefault();
 
         console.log(data)
-        await httpResource.post("/user/create", JSON.stringify(data)).then(value => {
+        await httpResource.post("/user/create", JSON.stringify(data),localStorage.getItem('Authorization')).then(value => {
             if (value.status === 200) {
                 router.push("/admin/user")
             }else{
@@ -30,12 +30,11 @@ export default function Create() {
     }
 
     useEffect(() => {
-        const request = httpResource.getWithNoAuth("/roles");
-        request.then(value => {
+         httpResource.get("/roles",localStorage.getItem('Authorization')).then(value => {
             value.json().then(value => {
-                setRoles(value);
+                setRoles(value)
             });
-        });
+         });
     }, []);
     return (<>
         <AdminNavbar/>

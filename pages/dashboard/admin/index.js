@@ -1,5 +1,5 @@
-import AdminNavbar from "../../components/nav/AdminNavbar";
-import Footer from "../../components/core/footer";
+import AdminNavbar from "../../../components/nav/AdminNavbar";
+import Footer from "../../../components/core/footer";
 
 export default function Admin(){
     return (<>

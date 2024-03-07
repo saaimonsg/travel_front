@@ -12,8 +12,8 @@ export default function AdminNavbar() {
                         {t("user.userManagement")}
                     </a>
                     <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="/admin/user/list">{t("list")}</a></li>
-                        <li><a className="dropdown-item" href="/admin/user/create">{t("create")}</a></li>
+                        <li><a className="dropdown-item" href="/dashboard/admin/user/list">{t("list")}</a></li>
+                        <li><a className="dropdown-item" href="/dashboard/admin/user/create">{t("create")}</a></li>
 
 
                         {/*<li><a className="dropdown-item" href="#">{t("trips")}</a></li>*/}
