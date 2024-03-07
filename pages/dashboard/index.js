@@ -10,6 +10,7 @@ export default function Dashboard() {
     useEffect(() => {
 
         let auth = localStorage.getItem("Authorization");
+        console.log(auth)
         const response = resourceFactory.get('/location',auth);
 
         response.then((res) => {
@@ -41,6 +42,5 @@ export default function Dashboard() {
                 </table>
             </div>
         </div>
-        <Footer></Footer>
     </>);
 }

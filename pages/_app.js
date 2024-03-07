@@ -1,12 +1,7 @@
-/**
- * Style
- */
 
 /**
  * App
  */
-import data from "./data.json";
-import {InitDataContext} from "../components/core/context";
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import {SSRProvider} from "react-bootstrap";
 import i18next from "i18next";
@@ -15,7 +10,6 @@ import common_en from "../i18lang/common_en.json";
 import common_es from "../i18lang/common_es.json";
 import Footer from "../components/core/footer";
 import CustomHead from "../components/core/head/CustomHead";
-import {Html} from "next/document";
 
 
 function MyApp({Component, pageProps}) {
@@ -35,12 +29,11 @@ function MyApp({Component, pageProps}) {
 
     return (<>
         <SSRProvider>
-            <InitDataContext.Provider value={data}>
                 <I18nextProvider i18n={i18next}>
                     <CustomHead></CustomHead>
                     <Component {...pageProps}/>
+                    <Footer></Footer>
                 </I18nextProvider>
-            </InitDataContext.Provider>
         </SSRProvider>
     </>);
 }

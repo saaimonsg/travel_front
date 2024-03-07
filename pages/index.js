@@ -14,8 +14,6 @@ export default function Index() {
         <div className="container-fluid">
                 {/*<img className="container-fluid hero-img" src={"/img/landscape_1.jpg"}/>*/}
         </div>
-
-        <Footer></Footer>
     </>)
 }
 
