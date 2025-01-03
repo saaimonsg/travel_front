@@ -18,7 +18,7 @@ yarn dev
 
 Open [http://localhost:80](http://localhost:80) with your browser to see the result.
 
-You can start editing the page by modifying `pages/GBAMain.js`. The page auto-updates as you edit the file.
+
 
 [//]: # ([API routes]&#40;https://nextjs.org/docs/api-routes/introduction&#41; can be accessed)
 [//]: # (on [http://localhost:3000/api/hello]&#40;http://localhost:3000/api/hello&#41;. This endpoint can be edited)
