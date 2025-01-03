@@ -1,4 +1,3 @@
-import Footer from "../../components/core/footer";
 import {useTranslation} from "react-i18next";
 import {useContext, useEffect} from "react";
 import UserNavbar from "../../components/nav/UserNavbar";

@@ -5,8 +5,9 @@ import Footer from "../../components/core/footer";
 import {useTranslation} from "react-i18next";
 import axios from "axios";
 import {HttpResourceFactoryContext} from "../../components/core/context";
+// import {Button} from "react-bootstrap";
 
-export default function Login() {
+export default function LoginView() {
 
     const [t, i18n] = useTranslation("common");
     const http = useContext(HttpResourceFactoryContext);
@@ -34,6 +35,7 @@ export default function Login() {
     }
 
     return (<>
+        
         <form id='loginform' className="container" onSubmit={handleSubmitForm}>
             <div className="mb-3">
                 <label htmlFor="usernameInput" className="form-label">{t("usernameInput")}</label>

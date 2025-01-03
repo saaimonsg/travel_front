@@ -1,18 +1,29 @@
 import TopNavbar from "../components/nav/TopNavbar";
-import Footer from "../components/core/footer";
 import {useTranslation} from "react-i18next";
-import CustomHead from "../components/core/head/CustomHead";
+// import {Button} from "react-bootstrap";
+import LoginView from "./login";
+import {useState} from "react";
+import {useRouter} from "next/navigation";
 
 export default function Index() {
     const [t, i18n] = useTranslation("common");
+    const [showLogin, setShowLogin] = useState(false);
+    const router = useRouter()
+
+    const handleLogin = () => {
+        setShowLogin(!showLogin);
+    };
+
 
     return (<>
         <TopNavbar>
-            <li><a className="nav-link  " aria-current="page" href="/login">{t("login.tag")}</a></li>
-            <li><a className="nav-link " aria-current="page" href="/signin">{t("signin")}</a></li>
+            <li><button className="nav-link" aria-current="page" onClick={handleLogin}>{t("login.tag")}</button></li>
+            <li><button className="nav-link" aria-current="page" href="/signin">{t("signin")}</button></li>
         </TopNavbar>
         <div className="container-fluid">
-                {/*<img className="container-fluid hero-img" src={"/img/landscape_1.jpg"}/>*/}
+            <div className="container">
+                {showLogin && <LoginView/>}
+            </div>
         </div>
     </>)
 }
